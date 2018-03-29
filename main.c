@@ -68,9 +68,12 @@ void display(void){
     glMatrixMode(GL_MODELVIEW); // carrega a matriz de modelo
     glLoadIdentity();           // carrega a matriz identidade
 
-    glTranslatef(tx, ty, 0);
+    glTranslatef(tx+5, ty+5, 0);
     glRotatef(theta, 0, 0, 1);
-    glTranslatef(-tx, -ty, 0);
+    glTranslatef(-tx-5, -ty-5, 0);
+
+
+
 
     glBegin(GL_POLYGON);                    // desenha uma linha
         glVertex2i(tx, ty);
